@@ -1,0 +1,198 @@
+[
+  {
+    "table_name": "announcement",
+    "column_list": [
+      "announcement_id",
+      "title",
+      "content",
+      "parent_department_code",
+      "employee_id",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  {
+    "table_name": "annual_leave_quotas",
+    "column_list": [
+      "fiscal_year",
+      "employee_id",
+      "total_leave_days",
+      "used_leave_days"
+    ]
+  },
+  {
+    "table_name": "client_companies",
+    "column_list": [
+      "client_company_id",
+      "client_company_name",
+      "partner_type",
+      "business_registration_number",
+      "main_business_sector",
+      "contact_person_name",
+      "contact_person_email",
+      "contact_person_phone",
+      "contract_status_code",
+      "internal_manager_employee_id"
+    ]
+  },
+  {
+    "table_name": "departments",
+    "column_list": [
+      "department_code",
+      "department_name",
+      "parent_department_code"
+    ]
+  },
+  {
+    "table_name": "development_unit_prices",
+    "column_list": [
+      "unit_price_id",
+      "department_code",
+      "job_rank_id",
+      "price_amount"
+    ]
+  },
+  {
+    "table_name": "employee_tech_skills",
+    "column_list": [
+      "tech_skill_id",
+      "employee_id",
+      "skill_name",
+      "skill_category",
+      "proficiency_level",
+      "years_of_experience"
+    ]
+  },
+  {
+    "table_name": "employees",
+    "column_list": [
+      "employee_id",
+      "employee_name",
+      "phone_number",
+      "job_rank_id",
+      "department_code",
+      "home_address",
+      "company_email",
+      "login_password",
+      "account_creation_date",
+      "gender_code",
+      "birth_date",
+      "hire_date",
+      "resignation_date"
+    ]
+  },
+  {
+    "table_name": "job_ranks",
+    "column_list": [
+      "job_rank_id",
+      "job_rank_name",
+      "job_rank_category",
+      "job_rank_level"
+    ]
+  },
+  {
+    "table_name": "leave_types",
+    "column_list": [
+      "leave_type_code",
+      "leave_type_name"
+    ]
+  },
+  {
+    "table_name": "leave_usage_history",
+    "column_list": [
+      "history_id",
+      "employee_id",
+      "leave_type_code",
+      "used_days_count",
+      "start_date",
+      "end_date"
+    ]
+  },
+  {
+    "table_name": "login_history",
+    "column_list": [
+      "login_history_id",
+      "employee_id",
+      "login_timestamp"
+    ]
+  },
+  {
+    "table_name": "meeting_room",
+    "column_list": [
+      "meeting_room_id",
+      "room_name"
+    ]
+  },
+  {
+    "table_name": "project_team_members",
+    "column_list": [
+      "project_id",
+      "employee_id",
+      "assigned_timestamp"
+    ]
+  },
+  {
+    "table_name": "projects",
+    "column_list": [
+      "project_id",
+      "project_title",
+      "project_description",
+      "start_date",
+      "end_date",
+      "is_completed"
+    ]
+  },
+  {
+    "table_name": "reservation_meeting_room",
+    "column_list": [
+      "reservation_id",
+      "meeting_room_id",
+      "employee_id",
+      "department_code",
+      "usage_date",
+      "start_time",
+      "reserved_at"
+    ]
+  },
+  {
+    "table_name": "send_mail",
+    "column_list": [
+      "mail_id",
+      "receiver_email",
+      "sender_email",
+      "subject",
+      "content",
+      "sent_at"
+    ]
+  },
+  {
+    "table_name": "tbl_deep_nexus_docs",
+    "column_list": [
+      "id",
+      "file_id",
+      "chunk_index",
+      "doc_title",
+      "doc_url",
+      "content",
+      "content_vector",
+      "metadata",
+      "permission_list",
+      "version",
+      "created_at",
+      "updated_at"
+    ]
+  },
+  {
+    "table_name": "tbl_deep_nexus_schema",
+    "column_list": [
+      "id",
+      "table_name",
+      "table_comment",
+      "column_list",
+      "ddl_content",
+      "sample_rows",
+      "schema_vector",
+      "created_at"
+    ]
+  }
+]

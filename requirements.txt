@@ -1,0 +1,45 @@
+fastapi
+uvicorn
+sentence-transformers
+langchain
+langchain-openai
+langchain-community
+langchain-huggingface
+langgraph
+python-dotenv
+tiktoken
+pydantic
+pydantic-settings
+sqlalchemy
+redis==5.0.1
+aioredis
+asyncpg
+pgvector
+pypdf
+
+# audio file
+faster-whisper
+python-multipart
+
+# email
+aiosmtplib
+
+# signup, login
+passlib
+bcrypt==4.0.1
+PyJWT
+
+# generate-unstructured-vectors
+langchain_experimental
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pymupdf
+nltk
+scikit-learn
+numpy
+pandas
+openpyxl
+python-docx
+docx2txt
+chardet

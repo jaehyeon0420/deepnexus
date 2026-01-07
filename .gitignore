@@ -1,0 +1,5 @@
+*.pyc
+.env
+app/models/bge-reranker-onnx-int8/
+app/test/token.json
+app/test/deepnexus_client.json
