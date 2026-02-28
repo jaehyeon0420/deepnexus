@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="Deep Nexus Logo" width="200" />
+  <img src="assets/logo.jpg" alt="Deep Nexus Logo" width="200" />
 </p>
 
 <h1 align="center">Deep Nexus</h1>
@@ -70,7 +70,7 @@
 
 <!-- 아키텍처 이미지를 준비한 후 아래 경로를 수정하세요 -->
 <p align="center">
-  <img src="assets/data-pipeline.PNG" alt="Data Pipeline" width="200" />
+  <img src="assets/data-pipeline.PNG" alt="Data Pipeline"/>
 </p>
 
 ```
@@ -97,7 +97,7 @@
 
 
 <p align="center">
-  <img src="assets/architecture.PNG" alt="Data Pipeline" width="200" />
+  <img src="assets/architecture.PNG" alt="Data Pipeline" />
 </p>
 
 ---
