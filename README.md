@@ -1,3 +1,4 @@
+사내 정형(RDB) · 비정형(보고서, 규정 등) 데이터를 통합 검색하는 AI 기반 사내 챗봇
 <p align="center">
   <img src="assets/logo.jpg" alt="Deep Nexus Logo" width="200" />
 </p>
