@@ -78,7 +78,7 @@
 - **공지사항** — 부서별 공지 CRUD
 - **메일** — SMTP 기반 사내 메일 전송 및 관리
 - **회의실 예약** — 월별/일별 예약 현황 조회 및 예약 관리
-- **Row Level Security** — 직급/부서 기반 데이터 접근 제어
+- **PostgreSQL RLS(Row Level Security)** — 직급/부서 기반 데이터 접근 제어
 
 ---
 
@@ -95,7 +95,7 @@
 ### 시스템 아키텍처
 
 <p align="center">
-  <img src="assets/architecture.PNG" alt="Data Pipeline" />
+  <img src="assets/architecture.PNG" alt="System Architecture" />
 </p>
 
 ---
