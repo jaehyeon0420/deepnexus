@@ -69,7 +69,8 @@
   
 - **AI 채팅** — 자연어 질문 → 의도 분석 → 정형/비정형 데이터 통합 조회 → 스트리밍 답변
 - **Text-to-SQL** — 자연어를 PostgreSQL 쿼리로 변환하여 RDB 데이터 조회 (CoT 기반, 최대 3회 재시도)
-- **하이브리드 벡터 검색** — HNSW 벡터 검색 + GIN 키워드 검색 + ONNX Reranking
+- **하이브리드 벡터 검색** — HNSW 벡터 검색 + GIN 키워드 검색
+- **Reranking** — 고품질의 답변을 위한 결과 청크 ONNX Reranking
 - **시맨틱 캐시** — Redis Vector Search 기반 유사 질문 캐싱 (24시간 TTL)
 - **파일 업로드 분석** — PDF, DOCX 등 업로드 파일 파싱 및 분석
 - **음성 인식(STT)** — Faster-Whisper 기반 한국어 음성 → 텍스트 변환
