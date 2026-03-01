@@ -491,8 +491,8 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ## 11. 결과 및 성과
 
 <div style="display:flex;">
-  <img src="assets/deepnexus-main.PNG" alt="Main" width="300" />
-  <img src="assets/deepnexus-rag-1.PNG" alt="RAG-1" width="300" />
-  <img src="assets/deepnexus-langsmith.PNG" alt="LangSmith" width="300" />
+  <img src="assets/deepnexus-main.PNG" alt="Main"/>
+  <img src="assets/deepnexus-rag-1.PNG" alt="RAG-1"/>
+  <img src="assets/deepnexus-langsmith.PNG" alt="LangSmith"/>
 </div>
 
