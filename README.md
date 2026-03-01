@@ -129,12 +129,12 @@ graph TD
     generator --> save["Background Task<br/>캐시 저장 & 대화 기록 저장"]
     save --> END(["🏁 END"])
 
-    style router fill:#e1f5fe,stroke:#0288d1
-    style sql_agent fill:#fff3e0,stroke:#f57c00
-    style vector_search fill:#fff3e0,stroke:#f57c00
-    style generator fill:#e8f5e9,stroke:#388e3c
-    style cache fill:#f3e5f5,stroke:#7b1fa2
-    style parallel fill:#fce4ec,stroke:#c62828
+    style router fill:#000000,stroke:#0288d1
+    style sql_agent fill:#000000,stroke:#f57c00
+    style vector_search fill:#000000,stroke:#f57c00
+    style generator fill:#000000,stroke:#388e3c
+    style cache fill:#000000,stroke:#7b1fa2
+    style parallel fill:#000000,stroke:#c62828
 ```
 
 ### 단계별 설명
@@ -493,7 +493,10 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ## 11. 결과 및 성과
 
 - [목차로 돌아가기](#목차)
-  
+
+<iframe src="https://youtu.be/CflJ6611RhA"></iframe>
+<video src="assets/deepnexus.mp4"></video>
+
 <div style="display:flex;">
   <img src="assets/deepnexus-main.PNG" alt="Main"/>
   <img src="assets/deepnexus-rag-1.PNG" alt="RAG-1"/>
