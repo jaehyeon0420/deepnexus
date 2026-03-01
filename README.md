@@ -31,6 +31,7 @@
 8. [보안](#8-보안)
 9. [인프라 및 배포](#9-인프라-및-배포)
 10. [환경 설정 및 실행 방법](#10-환경-설정-및-실행-방법)
+11. [결과 화면 및 성과](#11-결과-및-성과)
 
 ---
 
@@ -135,6 +136,10 @@ graph TD
 ```
 
 ### 단계별 설명
+
+<p align="center">
+  <img src="assets/workflow.PNG" alt="Workflow"/>
+</p>
 
 #### 1단계: 시맨틱 캐시 확인
 
@@ -482,3 +487,12 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 - Swagger UI: http://localhost:8000/docs
 - ReDoc: http://localhost:8000/redoc
+
+## 11. 결과 및 성과
+
+<div style="display:flex;">
+  <img src="assets/deepnexus-main.PNG" alt="Main" width="300" />
+  <img src="assets/deepnexus-rag-1.PNG" alt="RAG-1" width="300" />
+  <img src="assets/deepnexus-langsmith.PNG" alt="LangSmith" width="300" />
+</div>
+
