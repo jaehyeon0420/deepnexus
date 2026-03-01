@@ -494,12 +494,7 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 - [목차로 돌아가기](#목차)
 
-<iframe src="https://youtu.be/CflJ6611RhA"></iframe>
-<video src="assets/deepnexus.mp4"></video>
 
-<div style="display:flex;">
-  <img src="assets/deepnexus-main.PNG" alt="Main"/>
-  <img src="assets/deepnexus-rag-1.PNG" alt="RAG-1"/>
-  <img src="assets/deepnexus-langsmith.PNG" alt="LangSmith"/>
-</div>
+### 동영상을 보려면 아래 썸네일 이미지를 클릭하세요.
 
+[![Video Title](http://img.youtube.com/vi/CflJ6611RhA/0.jpg)](https://www.youtube.com/watch?v=CflJ6611RhA)
