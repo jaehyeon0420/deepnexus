@@ -138,10 +138,7 @@ async def hybrid_vector_search(query_text: str, department_code: str, filter_key
             #step2_start = time.perf_counter()
             await session.execute(text("SET LOCAL jit = off"))
             
-            #print(f"⏱️ [Step 2: DB Config] {time.perf_counter() - step2_start:.4f} sec")
-            
             # 3. 벡터 검색 HNSW 인덱스 사용
-            #step3_start = time.perf_counter()
             vector_sql = text("""
                 SELECT content, metadata, doc_url, doc_title, (1 - (content_vector <=> :vector)) as sim_score
                 FROM tbl_deep_nexus_docs
@@ -151,10 +148,8 @@ async def hybrid_vector_search(query_text: str, department_code: str, filter_key
             
             vector_result = await session.execute(vector_sql, {"vector": str(query_vector)})
             vector_rows = vector_result.fetchall()
-            #print(f"⏱️ [Step 3: Vector Search] {time.perf_counter() - step3_start:.4f} sec (Found: {len(vector_rows)})")
             
             # 4. 키워드 검색 GIN 인덱스 사용
-            #step4_start = time.perf_counter()
             keyword_rows = []
             if filter_keywords:
                 safe_keywords = [f"'%{kw.replace("'", "''")}%'" for kw in filter_keywords]
@@ -168,10 +163,8 @@ async def hybrid_vector_search(query_text: str, department_code: str, filter_key
                 """)
                 keyword_result = await session.execute(keyword_sql)
                 keyword_rows = keyword_result.fetchall()
-            #print(f"⏱️ [Step 4: Keyword Search] {time.perf_counter() - step4_start:.4f} sec (Found: {len(keyword_rows)})")
             
             # 5. 결과 병합 및 중복 제거
-            #step5_start = time.perf_counter()
             unique_docs = {}
             for row in vector_rows:
                 unique_docs[row.content] = row
@@ -179,13 +172,11 @@ async def hybrid_vector_search(query_text: str, department_code: str, filter_key
                 if row.content not in unique_docs:
                     unique_docs[row.content] = row
             combined_rows = list(unique_docs.values())
-            #print(f"⏱️ [Step 5: Merge] {time.perf_counter() - step5_start:.4f} sec (Total: {len(combined_rows)})")
             
             if not combined_rows:
                 return "검색 결과가 없습니다."
 
             # 6. Reranking
-            #step6_start = time.perf_counter()
             documents = [row.content for row in combined_rows]
             pairs = [[query_text, doc] for doc in documents]
             
