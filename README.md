@@ -108,6 +108,9 @@
 
 ```mermaid
 graph TD
+    classDef blackText fill:#FFFFFF,stroke:#000000,color:#000000
+    classDef custom fill:#e8654ew,stroke:#000000,color:#000000
+
     START(["🚀 START"]) --> cache{"시맨틱 캐시 확인"}
     
     cache -->|Cache Hit| response["캐시된 응답 반환"]
@@ -129,12 +132,15 @@ graph TD
     generator --> save["Background Task<br/>캐시 저장 & 대화 기록 저장"]
     save --> END(["🏁 END"])
 
-    style router fill:#000000,stroke:#0288d1
-    style sql_agent fill:#000000,stroke:#f57c00
-    style vector_search fill:#000000,stroke:#f57c00
-    style generator fill:#000000,stroke:#388e3c
-    style cache fill:#000000,stroke:#7b1fa2
-    style parallel fill:#000000,stroke:#c62828
+    style router fill:#FFFFFF,stroke:#000000, color:#000000
+    style sql_agent fill:#FFFFFF,stroke:#000000, color:#000000
+    style vector_search fill:#FFFFFF,stroke:#000000
+    style generator fill:#FFFFFF,stroke:#000000
+    style cache fill:#FFFFFF,stroke:#000000
+    style parallel fill:#FFFFFF,stroke:#000000
+
+    class router,sql_agent,vector_search,generator,cache,parallel,response,save blackText
+    class START,END custom
 ```
 
 ### 단계별 설명
